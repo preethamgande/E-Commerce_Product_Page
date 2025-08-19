@@ -1,0 +1,492 @@
+.welcome-div {
+  width: 100%;
+  height: 200px;
+  background-color: #f1f3f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  font-weight: bold;
+}
+
+.category1 {
+  display: flex;
+  width: 1100px;
+}
+
+h2 {
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--text-dark);
+}
+span {
+  font-size: 14px;
+
+  font-weight: bold;
+}
+.container1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+.product-item-c1 img {
+  border-radius: 8px;
+}
+
+.product-item-c1 {
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: var(--card-background);
+}
+
+.product-item-c1:hover {
+  transform: scale(1.1);
+  box-shadow: var(--hover-shadow);
+}
+
+.container2 {
+  width: 1100px;
+  height: 400px;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 5px;
+}
+
+.container2 div {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#Item1 {
+  grid-column: 1/4;
+  grid-row: 1/3;
+  background-image: url("https://www.esquire.com.au/wp-content/uploads/2024/06/colourful-mens-clothes-sharp.jpg");
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+#Item2 {
+  grid-column: 4/6;
+  grid-row: 1/2;
+  background-image: url("https://cdn.shopify.com/s/files/1/0270/3812/2051/files/5b_480x480.jpg?v=1586505636");
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+#Item3 {
+  grid-column: 4/6;
+  grid-row: 2/3;
+  background-image: url("https://indian-retailer.s3.ap-south-1.amazonaws.com/s3fs-public/2024-10/Top%207%20Winter%20Wear%20Brands%20in%20India%20Under%203500%20for%20Men%20and%20Women.jpg");
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+#Item1::before,
+#Item2::before,
+#Item3::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* semi-transparent overlay */
+  z-index: 1;
+  border-radius: 5px;
+}
+#Item1 h3,
+#Item1 p,
+#Item2 h3,
+#Item2 p,
+#Item3 h3,
+#Item p {
+  position: relative;
+  z-index: 2;
+}
+
+#Item1,
+#Item2,
+#Item3 {
+  position: relative;
+  overflow: hidden;
+}
+
+.container3 {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-heading {
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 0;
+  padding-left: 10px;
+}
+.shopElectronics {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.shopElectronics h3 {
+  font-size: 22px;
+  font-weight: bold;
+  padding: 0 5px;
+  white-space: nowrap;
+}
+
+.product-item-c2 {
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+}
+
+.product-item-c2:hover {
+  transform: translateY(-15px);
+  box-shadow: var(--hover-shadow);
+}
+
+.product-item-c2 img {
+  height: 280px;
+  object-fit: fill;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* Testing */
+
+.product-item-c2 h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.product-item-c2 .Price {
+  font-size: 16px;
+  color: #007bff;
+  font-weight: 600;
+}
+
+.container4 {
+  width: 1100px;
+}
+
+.shopFootwears {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+  gap: 10px;
+  margin-right: 20px;
+}
+
+.product-item-c3 img {
+  width: 280px;
+  height: 280px;
+  object-fit: fill;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: block;
+  margin: 0 auto;
+}
+.product-item-c3 {
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+}
+
+.product-item-c3:hover {
+  transform: scale(1.1);
+  box-shadow: var(--hover-shadow);
+}
+
+.shopFootwears h2 {
+  padding: 0 20px;
+  white-space: nowrap;
+}
+
+.product-item-c3 h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: #333;
+}
+
+.product-item-c3 .Price {
+  font-size: 16px;
+  color: #007bff;
+  font-weight: 600;
+}
+
+.container5 {
+  height: 300px;
+  width: 1000px;
+  margin: 80px auto;
+  gap: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+#Text {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  text-align: center;
+}
+
+#Text h3 {
+  font-weight: bold;
+  padding: 10px;
+  color: #333;
+}
+
+#Text p {
+  font-size: 15px;
+  padding: 12px 10px;
+}
+#Image {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  background-image: url("https://blogscdn.thehut.net/wp-content/uploads/sites/32/2018/06/19173601/1200x672_240517197_MC_MK_Blog_Imagery_June_Image10_1200x672_acf_cropped.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+  border-radius: 10px;
+}
+.container5 div {
+  border-radius: 5px;
+}
+.container5 button {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+}
+
+#Text button {
+  padding: 8px 10px;
+  margin: 10px;
+  background-color: #007bff;
+  font-weight: bold;
+}
+
+#Image:hover {
+  transform: scale(1.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#Text {
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 5px;
+  background-color: black;
+}
+
+#part1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  padding: 10px;
+}
+
+#part2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+#part3 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+#part4 {
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+
+#part5 {
+  grid-column: 1/5;
+  grid-row: 2/3;
+}
+
+.footer div {
+  color: var(--card-background);
+}
+
+.footer #part5 {
+  background-color: grey;
+  display: flex;
+}
+
+.footer #part5left {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  padding: 20px;
+}
+
+.footer #part5right {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.footer #part2 p {
+  font-weight: lighter;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.footer #part3 p {
+  font-weight: lighter;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.footer #part4 p {
+  font-weight: lighter;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Responsive design */
+
+@media (max-width: 1200px) {
+  .category1,
+  .container3,
+  .container4,
+  .container5 {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container1 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .product-item-c1 {
+    flex-basis: 45%;
+    margin-bottom: 20px;
+  }
+
+  .container2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+  }
+
+  #Item1,
+  #Item2,
+  #Item3 {
+    grid-column: 1/2;
+    grid-row: auto;
+    height: 200px;
+  }
+
+  .shopElectronics,
+  .shopFootwears {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .shopElectronics h3,
+  .shopFootwears h2 {
+    white-space: normal;
+    text-align: center;
+  }
+
+  .product-item-c2,
+  .product-item-c3 {
+    width: 100%;
+  }
+
+  .product-item-c2 img,
+  .product-item-c3 img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .container5 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    width: 90%;
+    height: auto;
+  }
+
+  #Text,
+  #Image {
+    grid-column: 1/2;
+    grid-row: auto;
+  }
+
+  .footer {
+    grid-template-columns: 1fr;
+  }
+
+  #part1,
+  #part2,
+  #part3,
+  #part4,
+  #part5 {
+    grid-column: 1/2;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .footer #part5 {
+    flex-direction: column;
+  }
+
+  .footer #part5left,
+  .footer #part5right {
+    width: 100%;
+    justify-content: center;
+    padding: 10px 0;
+  }
+}
