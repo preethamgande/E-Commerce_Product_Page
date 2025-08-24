@@ -28,7 +28,7 @@ It integrates the FakeStore API to fetch products dynamically and includes essen
 
 ## 🚀 Quickstart
 - git clone the repo
-- cd Ecommercep_Product_Page
+- cd Ecommerce_Product_Page
 - npm Install
 - npm start
 
@@ -36,7 +36,7 @@ It integrates the FakeStore API to fetch products dynamically and includes essen
 - 📂 src/
    - 📂 Components/
       - 📂 ProductCard --> CartHandler, ProductCard, WishlistHandler
-      -  📂 Redix --> action_creators, Reducers, reduxStore
+      -  📂 Redux --> action_creators, Reducers, reduxStore
       - 📂 Routing --> API_Info, Cart, Home, Navbar, Products, Profile, wishlist
 -  📁 App.css
 - 📁 App.jsx
