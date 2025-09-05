@@ -2,7 +2,7 @@ import { GetProducts } from "../API_Info/GetProducts";
 import { useState, useEffect } from "react";
 import { ProductCard } from "../../ProductCard/ProductCard";
 import { GetProductCategories } from "../API_Info/GetCategory";
-import { GetProductsByCategory } from "../API_Info/GetProductsByCategory";
+import { GetProductsByCategory } from "../API_Info/getProductsByCategory";
 import "./Products.css";
 
 export const Products = () => {
