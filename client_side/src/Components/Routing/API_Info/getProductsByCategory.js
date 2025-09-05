@@ -1,4 +1,4 @@
-export const getProductsByCategory = (productData, category) => {
+export const GetProductsByCategory = (productData, category) => {
   return category.toLowerCase() === "all"
     ? productData
     : productData.filter(
